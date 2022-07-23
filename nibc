@@ -1,0 +1,476 @@
+> fsevents@1.2.7 install /youpath/node_modules/fsevents
+> node install
+ 
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+node-pre-gyp WARN Tried to download(404): https://fsevents-binaries.s3-us-west-2.amazonaws.com/v1.2.7/fse-v1.2.7-node-v83-darwin-x64.tar.gz 
+node-pre-gyp WARN Pre-built binaries not found for fsevents@1.2.7 and node@14.17.0 (node-v83 ABI, unknown) (falling back to source compile with node-gyp) 
+node-pre-gyp WARN Pre-built binaries not installable for fsevents@1.2.7 and node@14.17.0 (node-v83 ABI, unknown) (falling back to source compile with node-gyp) 
+node-pre-gyp WARN Hit error Connection closed while downloading tarball file 
+  SOLINK_MODULE(target) Release/.node
+  SOLINK_MODULE(target) Release/.node
+  CXX(target) Release/obj.target/fse/fsevents.o
+  CXX(target) Release/obj.target/fse/fsevents.o
+In file included from In file included from ../fsevents.cc../fsevents.cc::66:
+:
+In file included from In file included from ../../nan/nan.h../../nan/nan.h::222222:
+:
+In file included from In file included from ../../nan/nan_converters.h../../nan/nan_converters.h::6767:
+:
+../../nan/nan_converters_43_inl.h../../nan/nan_converters_43_inl.h::2222::11::  error: no viable conversion from 'Local<v8::Context>' to 'v8::Isolate *'
+error: no viable conversion from 'Local<v8::Context>' to 'v8::Isolate *'
+X(Boolean)
+^~~~~~~~~~
+../../nan/nan_converters_43_inl.h:18:23: note: expanded from macro 'X'
+X(Boolean)
+^~~~~~~~~~
+../../nan/nan_converters_43_inl.h:18:23: note: expanded from macro 'X'
+      val->To ## TYPE(isolate->GetCurrentContext())                            \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      val->To ## TYPE(isolate->GetCurrentContext())                            \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:2848:37: note: passing argument to parameter 'isolate' here
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:2848:37: note: passing argument to parameter 'isolate' here
+  Local<Boolean> ToBoolean(Isolate* isolate) const;
+                                    ^
+  Local<Boolean> ToBoolean(Isolate* isolate) const;
+                                    ^
+In file included from In file included from ../fsevents.cc../fsevents.cc::66:
+:
+In file included from In file included from ../../nan/nan.h../../nan/nan.h::222222:
+:
+In file included from In file included from ../../nan/nan_converters.h../../nan/nan_converters.h::6767:
+:
+../../nan/nan_converters_43_inl.h../../nan/nan_converters_43_inl.h::4040::11::  errorerror: : no viable conversion from 'Local<v8::Context>' to 'v8::Isolate *'no viable conversion from 'Local<v8::Context>' to 'v8::Isolate *'
+ 
+X(bool, Boolean)X(bool, Boolean)
+ 
+^~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+ 
+../../nan/nan_converters_43_inl.h../../nan/nan_converters_43_inl.h::3737:29::29 : note: note: expanded from macro 'X'expanded from macro 'X'
+ 
+  return val->NAME ## Value(isolate->GetCurrentContext());                     \
+  return val->NAME ## Value(isolate->GetCurrentContext());                     \
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h2858::285830::30 : note: note: passing argument to parameter 'isolate' herepassing argument to parameter 'isolate' here
+ 
+  bool BooleanValue(Isolate* isolate) const;
+  bool BooleanValue(Isolate* isolate) const;
+                             ^
+                             ^
+In file included from In file included from ../fsevents.cc../fsevents.cc::66:
+:
+In file included from In file included from ../../nan/nan.h../../nan/nan.h::223223:
+:
+In file included from In file included from ../../nan/nan_new.h../../nan/nan_new.h::189189:
+:
+../../nan/nan_implementation_12_inl.h../../nan/nan_implementation_12_inl.h::356356::3737::  error: errortoo few arguments to function call, expected 2, have 1: 
+too few arguments to function call, expected 2, have 1
+  return v8::StringObject::New(value).As<v8::StringObject>();  return v8::StringObject::New(value).As<v8::StringObject>();
+ 
+         ~~~~~~~~~~~~~~~~~~~~~      ^         ~~~~~~~~~~~~~~~~~~~~~      ^
+ 
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:5854:23: note: 'New' declared here
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:5854:23:  static Local<Value> New(Isolate* isolate, Local<String> value); 
+                      ^note
+: 'New' declared here
+  static Local<Value> New(Isolate* isolate, Local<String> value);
+                      ^
+In file included from In file included from ../fsevents.cc../fsevents.cc::66:
+:
+In file included from In file included from ../../nan/nan.h../../nan/nan.h::27222722:
+:
+../../nan/nan_object_wrap.h../../nan/nan_object_wrap.h::2424::2525::  error: error: no member named 'IsNearDeath' in 'Nan::Persistent<v8::Object>'no member named 'IsNearDeath' in 'Nan::Persistent<v8::Object>'
+ 
+    assert(persistent().IsNearDeath());    assert(persistent().IsNearDeath());
+ 
+           ~~~~~~~~~~~~ ^           ~~~~~~~~~~~~ ^
+ 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h::9393::2525::  notenote: : expanded from macro 'assert'expanded from macro 'assert'
+ 
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+ 
+                        ^                        ^
+ 
+In file included from In file included from ../fsevents.cc../fsevents.cc::66:
+:
+In file included from In file included from ../../nan/nan.h../../nan/nan.h::27222722:
+:
+../../nan/nan_object_wrap.h../../nan/nan_object_wrap.h::127127::2626::  errorerror: : no member named 'IsNearDeath' in 'Nan::Persistent<v8::Object>'no member named 'IsNearDeath' in 'Nan::Persistent<v8::Object>'
+ 
+    assert(wrap->handle_.IsNearDeath());    assert(wrap->handle_.IsNearDeath());
+ 
+           ~~~~~~~~~~~~~ ^           ~~~~~~~~~~~~~ ^
+ 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h::9393::2525::  notenote: : expanded from macro 'assert'expanded from macro 'assert'
+ 
+    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+ 
+                        ^                        ^
+ 
+In file included from ../fsevents.cc:6:
+In file included from ../../nan/nan.h:2818:
+../../nan/nan_typedarray_contents.h:34:43: warning: 'GetContents' is deprecated: Use GetBackingStore. See http://crbug.com/v8/9908. [-Wdeprecated-declarations]
+In file included from ../fsevents.cc:6:
+In file included from ../../nan/nan.h:2818:
+../../nan/nan_typedarray_contents.h:34:43: warning: 'GetContents' is deprecated: Use GetBackingStore. See http://crbug.com/v8/9908. [-Wdeprecated-declarations]
+      data   = static_cast<char*>(buffer->GetContents().Data()) + byte_offset;
+                                          ^
+      data   = static_cast<char*>(buffer->GetContents().Data()) + byte_offset;
+                                          ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:5272:3: /Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:note5272: :3'GetContents' has been explicitly marked deprecated here: 
+note: 'GetContents' has been explicitly marked deprecated here  V8_DEPRECATE_SOON("Use GetBackingStore. See http://crbug.com/v8/9908.")
+ 
+  ^
+  V8_DEPRECATE_SOON("Use GetBackingStore. See http://crbug.com/v8/9908.")
+  ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8config.h:402:39: /Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8config.hnote:: 402:expanded from macro 'V8_DEPRECATE_SOON'39:
+ note: expanded from macro 'V8_DEPRECATE_SOON'
+# define V8_DEPRECATE_SOON(message) [[deprecated(message)]]
+                                      ^# define V8_DEPRECATE_SOON(message) [[deprecated(message)]]
+ 
+                                      ^
+../fsevents.cc:43:32: error: no template named 'Handle' in namespace 'v8'
+    static void Initialize(v8::Handle<v8::Object> exports);
+                           ~~~~^
+../fsevents.cc:43:32: error: no template named 'Handle' in namespace 'v8'
+    static void Initialize(v8::Handle<v8::Object> exports);
+                           ~~~~^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:89:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:89:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagNone").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagNone));
+  ~~~~~~~~^~~
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagNone").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagNone));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+ 
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note:   V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,candidate function not viable: requires 3 arguments, but 2 were provided
+                                    ^
+ 
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from In file included from ../fsevents.cc../fsevents.cc::7373:
+:
+../src/constants.cc../src/constants.cc::9090:11::11 : error: error: no matching member function for call to 'Set'no matching member function for call to 'Set'
+ 
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagMustScanSubDirs").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagMustScanSubDirs));
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagMustScanSubDirs").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagMustScanSubDirs));  ~~~~~~~~^~~
+ 
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:
+3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,:
+                                     ^
+note: candidate function not viable: requires 3 arguments, but 2 were provided/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h
+:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:91:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:91:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagUserDropped").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagUserDropped));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagUserDropped").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagUserDropped));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,:
+3670:                                    ^37
+: note/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h: :3673candidate function not viable: requires 3 arguments, but 2 were provided:37
+: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,37
+:                                     ^
+note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:92:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagKernelDropped").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagKernelDropped));
+  ~~~~~~~~^~~
+In file included from ../fsevents.cc/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h::733670:
+:37../src/constants.cc:: 92:11note: : error: candidate function not viable: requires 3 arguments, but 2 were providedno matching member function for call to 'Set'
+ 
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagKernelDropped").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagKernelDropped));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:93:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:93:11:   object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagEventIdsWrapped").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagEventIdsWrapped));error
+:   ~~~~~~~~^~~
+no matching member function for call to 'Set'
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagEventIdsWrapped").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagEventIdsWrapped));:
+   ~~~~~~~~^~~
+note: candidate function not viable: requires 3 arguments, but 2 were provided
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:94:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:94:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagHistoryDone").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagHistoryDone));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagHistoryDone").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagHistoryDone));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,3670
+:37                                    ^:
+ note: /Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.hcandidate function not viable: requires 3 arguments, but 2 were provided:3673
+:37: note: candidate function not viable: requires 3 arguments, but 2 were provided  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+ 
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:95:11: In file included from error: ../fsevents.ccno matching member function for call to 'Set'
+:73:
+../src/constants.cc:95:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagRootChanged").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagRootChanged));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37:  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagRootChanged").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagRootChanged)); 
+  ~~~~~~~~^~~note
+: candidate function not viable: requires 3 arguments, but 2 were provided
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: 
+candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:96:11: error: no matching member function for call to 'Set'In file included from ../fsevents.cc
+:73:
+../src/constants.cc:96:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagMount").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagMount));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagMount").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagMount));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37:  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, 
+                                    ^note
+: candidate function not viable: requires 3 arguments, but 2 were provided
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:97:In file included from 11../fsevents.cc::73:
+../src/constants.cc :97:error: no matching member function for call to 'Set'
+11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagUnmount").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagUnmount));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37:  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagUnmount").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagUnmount)); 
+  ~~~~~~~~^~~note
+: candidate function not viable: requires 3 arguments, but 2 were provided
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^                                    ^
+ 
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:: 3673:37note::  candidate function not viable: requires 3 arguments, but 2 were providednote
+: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:98:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:98:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemCreated").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemCreated));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemCreated").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemCreated));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37:  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, 
+                                    ^note
+: candidate function not viable: requires 3 arguments, but 2 were provided
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37: note:   V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+candidate function not viable: requires 3 arguments, but 2 were provided                                    ^
+ 
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:99:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:99:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemRemoved").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemRemoved));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemRemoved").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemRemoved));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,:
+3670:                                    ^37
+: /Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.hnote:: 3673:candidate function not viable: requires 3 arguments, but 2 were provided37:
+ note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,:
+37:                                    ^ 
+note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:100:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:100:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemInodeMetaMod").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemInodeMetaMod));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemInodeMetaMod").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemInodeMetaMod));
+  ~~~~~~~~^~~
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:: 3673:37note::  candidate function not viable: requires 3 arguments, but 2 were providednote
+: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,:
+3673:37                                    ^:
+ note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+In file included from ../fsevents.cc:73:
+../src/constants.cc:101:11: error: no matching member function for call to 'Set'
+In file included from ../fsevents.cc:73:
+../src/constants.cc:101:11: error: no matching member function for call to 'Set'
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemRenamed").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemRenamed));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  object->Set(Nan::New<v8::String>("kFSEventStreamEventFlagItemRenamed").ToLocalChecked(), Nan::New<v8::Integer>(kFSEventStreamEventFlagItemRenamed));
+  ~~~~~~~~^~~
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3670:37:   V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+note                                    ^: 
+candidate function not viable: requires 3 arguments, but 2 were provided/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h
+:3673:37: note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context,
+                                    ^
+/Users/aaaxxx/Library/Caches/node-gyp/14.17.0/include/node/v8.h:3673:37  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,:
+                                     ^
+note: candidate function not viable: requires 3 arguments, but 2 were provided
+  V8_WARN_UNUSED_RESULT Maybe<bool> Set(Local<Context> context, uint32_t index,
+                                    ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+1 warning and 20 errors generated.
+make: *** [Release/obj.target/fse/fsevents.o] Error 1
+make: *** [Release/obj.target/fse/fsevents.o] Error 1
+gypgyp  ERR!ERR!  build errorbuild error 
+ 
+gypgyp  ERR!ERR!  stackstack Error: `make` failed with exit code: 2
+ Error: `make` failed with exit code: 2
+gyp gypERR!  ERR!stack      at ChildProcess.onExit (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:194:23)
+stackgyp     at ChildProcess.onExit (/usr/local/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:194:23)
+ gyp ERR! ERR! stack     at ChildProcess.emit (events.js:376:20)
+stackgyp      at ChildProcess.emit (events.js:376:20)
+ERR! gypstack      at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12)
+gyp gypERR!  SystemERR! System Darwin 20.4.0
+ Darwin 20.4.0
+gyp gypERR!  ERR!command  "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "build" "--fallback-to-build" "--module=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64/fse.node" "--module_name=fse" "--module_path=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64" "--napi_version=8" "--node_abi_napi=napi"
+command "/usr/local/bin/node" "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "build" "--fallback-to-build" "--module=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64/fse.node" "--module_name=fse" "--module_path=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64" "--napi_version=8" "--node_abi_napi=napi"
+gypgyp  ERR!ERR!  cwdcwd /youpath/node_modules/fsevents
+ /youpath/node_modules/fsevents
+gyp gypERR!  node -vERR! v14.17.0
+ node -vgyp v14.17.0
+ ERR! gypnode-gyp -v v5.1.0
+ ERR!gyp  node-gyp -vERR! v5.1.0
+ not ok 
+gyp ERR! not ok 
+node-pre-gyp ERR! build error 
+node-pre-gyp ERR! stack Error: Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js build --fallback-to-build --module=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64/fse.node --module_name=fse --module_path=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64 --napi_version=8 --node_abi_napi=napi' (1)
+node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (/youpath/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/compile.js:83:29)
+node-pre-gyp ERR! stack     at ChildProcess.emit (events.js:376:20)
+node-pre-gyp ERR! stack     at maybeClose (internal/child_process.js:1055:16)
+node-pre-gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+node-pre-gyp ERR! System Darwin 20.4.0
+node-pre-gyp ERR! command "/usr/local/bin/node" "/youpath/node_modules/fsevents/node_modules/node-pre-gyp/bin/node-pre-gyp" "install" "--fallback-to-build"
+node-pre-gyp ERR! cwd /youpath/node_modules/fsevents
+node-pre-gyp ERR! node -v v14.17.0
+node-pre-gyp ERR! node-pre-gyp -v v0.10.3
+node-pre-gyp ERR! not ok 
+Failed to execute '/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js build --fallback-to-build --module=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64/fse.node --module_name=fse --module_path=/youpath/node_modules/fsevents/lib/binding/Release/node-v83-darwin-x64 --napi_version=8 --node_abi_napi=napi' (1)
+ 
+> nodent-runtime@3.2.1 install /youpath/node_modules/nodent-runtime
+> node build.js
+ 
+## Built /youpath/node_modules/nodent-runtime/dist/index.js
+ 
+> websocket@github:web3-js/WebSocket-Node#ef5ea2f41daf4a2113b80c9223df884b4d56c400 install /youpath/node_modules/websocket
+> (node-gyp rebuild 2> builderror.log) || (exit 0)
+ 
+  CXX(target) Release/obj.target/bufferutil/src/bufferutil.o
+ 
+> yorkie@2.0.0 install /youpath/node_modules/yorkie
+> node bin/install.js
+ 
+setting up Git hooks
+can't find .git directory, skipping Git hooks installation
+> fibers@5.0.0 install /youpath/node_modules/fibers
+> node build.js || nodejs build.js
+`darwin-x64-83` exists; testing
+Binary is fine; exiting
+> core-js@3.12.1 postinstall /youpath/node_modules/@vue/babel-preset-app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+> ejs@2.7.4 postinstall /youpath/node_modules/webpack-bundle-analyzer/node_modules/ejs
+> node ./postinstall.js
+Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+npm WARN The package axios is included as both a dev and production dependency.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules/fsevents):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 install: `node install`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+added 2544 packages from 2151 contributors in 65.695s
+139 packages are looking for funding
+  run `npm fund` for details
