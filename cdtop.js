@@ -1,5 +1,4 @@
 function fly_to_top() {
-  btf.scrollToDest(0, 500);
 }
 window.addEventListener("scroll", function (event) {
   var scrollTop =
