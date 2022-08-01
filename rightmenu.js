@@ -44,7 +44,7 @@
         var a = window.getSelection ? window.getSelection() : document.selection.createRange().text;
         "" == a ? layer.msg("啊噢...你没还没选择文字呢！") : window.open("https://www.baidu.com/s?wd=" +     a)
     }
-    $(function() {
+    jQuery(function ($) {
         for (var a = navigator.userAgent, b = "Android;iPhone;SymbianOS;Windows Phone;iPad;iPod".split(";"), d = !0, c = 0; c < b.length; c++) if (0 < a.indexOf(b[c])) {
             d = !1;
             break
